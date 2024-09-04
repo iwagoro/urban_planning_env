@@ -1,0 +1,144 @@
+{
+    "name": "fastapi",
+    "dockerComposeFile": "./docker-compose.yml",
+    "workspaceFolder": "/workspace/app",
+    "service": "app",
+    "shutdownAction": "stopCompose",
+    "init": true,
+    "mounts": [
+        {
+            "source": "${localWorkspaceFolder}/app",
+            "target": "/workspace/app",
+            "type": "bind"
+        }
+    ],
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "explorer.confirmDragAndDrop": false,
+                "editor.glyphMargin": false,
+                "editor.minimap.enabled": false,
+                "editor.mouseWheelZoom": true,
+                "explorer.openEditors.visible": 1,
+                "workbench.colorTheme": "Palenight Operator",
+                "workbench.statusBar.visible": true,
+                "workbench.iconTheme": "catppuccin-macchiato",
+                "editor.formatOnPaste": true,
+                "editor.autoIndent": "advanced",
+                "html.format.indentInnerHtml": true,
+                "indentRainbow.errorColor": "",
+                "editor.bracketPairColorization.enabled": true,
+                "workbench.colorCustomizations": {
+                    "editorBracketHighlight.foreground1": "#FF0000",
+                    "editorBracketHighlight.foreground2": "#FFBF3F",
+                    "editorBracketHighlight.foreground3": "#FFFF00",
+                    "editorBracketHighlight.foreground4": "#3FFF3F",
+                    "editorBracketHighlight.foreground5": "#3F7FFF",
+                    "editorBracketHighlight.foreground6": "#FF7FFF",
+                    "notebook.cellEditorBackground": "#2A2D3D",
+                    "notebook.cellBorderColor": "#a0a0a0",
+                    "notebook.focusedCellBackground": "#585858c9",
+                    "notebook.focusedCellBorder": "#7859BC",
+                    "notebook.focusedEditorBorder": "#7859BC",
+                    "notebook.cellToolbarSeparator": "#00f7ff",
+                    "notebook.cellHoverBackground": "#585858c9"
+                },
+                "indentRainbow.colors": [
+                    "rgba(102, 74, 179,0.7)",
+                    "rgba(162, 71, 168,0.7)",
+                    "rgba(159, 97, 195,0.7)",
+                    "rgba(144, 116,217,0.7)"
+                ],
+                "indentRainbow.ignoreLinePatterns": [
+                    "/[ \t]* [*]/g",
+                    "/[ \t]+[/]{2}/g"
+                ],
+                "editor.detectIndentation": false,
+                "editor.guides.bracketPairs": false,
+                "indentRainbow.tabmixColor": "rgba(128,32,96,1)",
+                "editor.inlineSuggest.enabled": true,
+                "remote.SSH.remotePlatform": {
+                    "54.178.83.123": "linux"
+                },
+                "typescript.updateImportsOnFileMove.enabled": "always",
+                "security.workspace.trust.untrustedFiles": "open",
+                "editor.formatOnSave": true,
+                "javascript.updateImportsOnFileMove.enabled": "never",
+                "explorer.confirmDelete": false,
+                "workbench.tree.indent": 24,
+                "explorer.compactFolders": false,
+                "material-icon-theme.folders.theme": "none",
+                "editor.cursorSmoothCaretAnimation": "on",
+                "editor.cursorBlinking": "expand",
+                "editor.cursorStyle": "block",
+                "material-icon-theme.activeIconPack": "react",
+                "editor.smoothScrolling": true,
+                "workbench.list.smoothScrolling": true,
+                "terminal.integrated.smoothScrolling": true,
+                "dev.containers.executeInWSL": true,
+                "editor.defaultFormatter": "esbenp.prettier-vscode",
+                "[python]": {
+                    "editor.defaultFormatter": "ms-python.black-formatter",
+                    "editor.codeActionsOnSave": {
+                        "source.fixAll": "explicit"
+                    },
+                    "editor.formatOnSave": true
+                },
+                "[javascript]": {
+                    "editor.codeActionsOnSave": {
+                        "source.fixAll": "explicit"
+                    },
+                    "editor.formatOnSave": true
+                },
+                "[typescript]": {
+                    "editor.codeActionsOnSave": {
+                        "source.fixAll": "explicit"
+                    },
+                    "editor.formatOnSave": true
+                },
+                "[typescriptreact]": {
+                    "editor.codeActionsOnSave": {
+                        "source.fixAll": "explicit"
+                    },
+                    "editor.formatOnSave": true
+                },
+                "http.proxyStrictSSL": false,
+                "remote.SSH.configFile": "/home/i20iwai/.ssh/config",
+                "workbench.startupEditor": "none",
+                "notebook.lineNumbers": "on",
+                "git.openRepositoryInParentFolders": "never",
+                "editor.wordWrap": "off",
+                "remote.autoForwardPortsSource": "hybrid",
+                "editor.fontFamily": "Consolas",
+                "terminal.integrated.fontFamily": "monospace",
+                "editor.renderWhitespace": "trailing",
+                "editor.autoClosingBrackets": "beforeWhitespace",
+                "scm.inputFontSize": 12,
+                "markdown.preview.fontSize": 12,
+                "editor.inlayHints.enabled": "off",
+                "diffEditor.wordWrap": "off",
+                "editor.guides.indentation": false,
+                "activitusbar.toggleSidebar": false,
+                "workbench.activityBar.location": "hidden",
+                "workbench.layoutControl.enabled": false,
+                "window.commandCenter": false,
+                "prettier.tabWidth": 4
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-python.black-formatter",
+                "KevinRose.vsc-python-indent",
+                "njpwerner.autodocstring",
+                "Gruntfuggly.activitusbar",
+                "sazumiviki.kawaine-theme",
+                "PKief.material-icon-theme",
+                "GitHub.copilot",
+                "oderwat.indent-rainbow",
+                "GitHub.copilot-chat",
+                "ms-vsliveshare.vsliveshare",
+                "ms-toolsai.jupyter",
+                "esbenp.prettier-vscode"
+            ]
+        }
+    }
+}

@@ -1,0 +1,15 @@
+numpy
+matplotlib
+pandas
+seaborn
+scipy
+scikit-learn
+librosa
+pytorch-lightning
+lightning
+torchinfo
+tensorboard
+black
+japanize_matplotlib
+folium
+geopandas
